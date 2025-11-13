@@ -1,6 +1,6 @@
 {
   "filters": {
-    "table_only": true,
+    "table_only": false,
     "category": ["Featured", "Research"]
   }
 }
