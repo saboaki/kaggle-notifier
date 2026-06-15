@@ -39,7 +39,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: sent_competitions.json
-          key: sent-competitions-${{ github.sha }}
+          key: sent-competitions-${{ github.run_id }}
           restore-keys: |
             sent-competitions-
 
@@ -57,4 +57,4 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: sent_competitions.json
-          key: sent-competitions-${{ github.sha }}
+          key: sent-competitions-${{ github.run_id }}
