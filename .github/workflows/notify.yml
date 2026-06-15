@@ -2,9 +2,10 @@ name: Kaggle Notifier
 
 on:
   schedule:
-    # 毎日 9:00 AM (JST 18:00) に実行
+    # 毎日 6:00, 12:00, 18:00 JST に実行
+    - cron: '0 21 * * *'
+    - cron: '0 3 * * *'
     - cron: '0 9 * * *'
-  # 手動実行も可能
   workflow_dispatch:
 
 jobs:
